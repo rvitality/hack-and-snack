@@ -38,3 +38,22 @@
     line-height: 0.8;
     transform: translate(-50%, -50%) rotate(-12deg);
 }
+
+.scroll {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce-animation;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

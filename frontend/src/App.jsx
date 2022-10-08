@@ -3,6 +3,8 @@ import React from "react";
 import watermelon from "./assets/images/watermelon.png";
 import phone from "./assets/images/phone.png";
 
+import { CgScrollV } from "react-icons/cg";
+
 import "./App.css";
 
 const App = () => {
@@ -33,6 +35,12 @@ const App = () => {
                         <span className="ml-4">good</span> <span className="ml-28">food</span>
                     </div>
                 </div>
+            </div>
+
+            <div className="scroll absolute bottom-5 left-[46%] -translate-x-1/2 flex flex-col items-center space-y-3 z-10">
+                {/* <BsMouse className="h-7 w-7 " /> */}
+                <CgScrollV className=" h-6 w-6 " />
+                <p className="text-sm text-black tracking-[.25rem]">Scroll</p>
             </div>
         </div>
     );
