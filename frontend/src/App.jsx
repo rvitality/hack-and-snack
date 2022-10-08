@@ -8,12 +8,14 @@ import { CgScrollV } from "react-icons/cg";
 import adoboImg from "./assets/images/foods/adobo.png";
 
 import RecipeCard from "./components/RecipeCard/RecipeCard.component";
+import Header from "./components/Header/Header.component";
 
 import "./App.css";
 
 const App = () => {
     return (
         <div className="relative overflow-hidden">
+            <Header />
             <div className="flex h-screen justify-end">
                 {/* LEFT SIDE */}
                 <div className="hero-left flex items-center justify-center w-1/2 ">
