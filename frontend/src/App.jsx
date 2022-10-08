@@ -5,6 +5,10 @@ import phone from "./assets/images/phone.png";
 
 import { CgScrollV } from "react-icons/cg";
 
+import adoboImg from "./assets/images/foods/adobo.png";
+
+import RecipeCard from "./components/RecipeCard/RecipeCard.component";
+
 import "./App.css";
 
 const App = () => {
@@ -33,6 +37,50 @@ const App = () => {
                     <div className="large-text__right ">
                         <span className="text-[5rem] block -mb-8">and find</span>{" "}
                         <span className="ml-4">good</span> <span className="ml-28">food</span>
+                    </div>
+
+                    {/* DISHES */}
+                    <div className="dishes pl-60 flex items-center justify-between space-x-6">
+                        {/* card 1 */}
+                        <RecipeCard
+                            imgSrc={adoboImg}
+                            name="Chicken Adobo"
+                            nutrition="40 calories"
+                            time="30 mins."
+                            servings="4"
+                        />
+                        {/* card 2 */}
+                        <RecipeCard
+                            imgSrc={adoboImg}
+                            name="Chicken Adobo"
+                            nutrition="40 calories"
+                            time="30 mins."
+                            servings="4"
+                        />
+                        {/* card 3 */}
+                        <RecipeCard
+                            imgSrc={adoboImg}
+                            name="Chicken Adobo"
+                            nutrition="40 calories"
+                            time="30 mins."
+                            servings="4"
+                        />
+                        {/* card 4 */}
+                        <RecipeCard
+                            imgSrc={adoboImg}
+                            name="Chicken Adobo"
+                            nutrition="40 calories"
+                            time="30 mins."
+                            servings="4"
+                        />
+                        {/* card 5 */}
+                        <RecipeCard
+                            imgSrc={adoboImg}
+                            name="Chicken Adobo"
+                            nutrition="40 calories"
+                            time="30 mins."
+                            servings="4"
+                        />
                     </div>
                 </div>
             </div>
