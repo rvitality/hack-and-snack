@@ -1,0 +1,60 @@
+.hero-left {
+    background-image: url("../../assets/images/hero-wavy-shape-white.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: none;
+}
+
+.hero-right {
+    background-image: url("../../assets/images/hero-wavy-shape-green.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-right .melon {
+    transform: translate(-50%, -50%);
+}
+
+.main-heading {
+    transform: translate(-50%, -50%) rotate(-12deg);
+}
+
+.large-text__right {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-size: 13.5rem;
+    left: 82%;
+    top: 30%;
+    z-index: 1;
+    font-family: "Satisfy";
+    opacity: 0.4;
+    width: 100%;
+    line-height: 0.9;
+    transform: translate(-50%, -50%) rotate(-12deg);
+}
+
+.scroll {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: bounce-animation;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce-animation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

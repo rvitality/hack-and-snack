@@ -1,34 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Routes, Route, Navigate } from "react-router-dom";
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
+import Header from "./components/Header/Header.component";
 
-export default App
+import Landing from "./routes/Landing/Landing.route";
+import Match from "./routes/Match/Match.route";
+import { useAuthContext } from "./context/AuthContext";
+
+const App = () => {
+    const { isLoggedIn } = useAuthContext();
+
+    return (
+        <Routes>
+            <Route path="/" element={<Header />}>
+                <Route index element={<Landing />} />
+                <Route path="/match" element={isLoggedIn ? <Match /> : <Navigate to="/" />} />
+
+                {/* TODO: Uncomment top code to restrict user */}
+                {/* <Route path="/match" element={<Match />} /> */}
+            </Route>
+            <Route
+                path="*"
+                element={
+                    <>
+                        <Header />
+                        <h1>Theres nothing here!</h1>
+                        <p>404 page</p>
+                    </>
+                }
+            />
+        </Routes>
+    );
+};
+
+export default App;
