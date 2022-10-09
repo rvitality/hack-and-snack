@@ -16,7 +16,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Header />}>
                 <Route index element={<Landing />} />
-                <Route path="/match" element={isLoggedIn ? <match /> : <Navigate to="/" />} />
+                <Route path="/match" element={isLoggedIn ? <Match /> : <Navigate to="/" />} />
 
                 {/* TODO: Uncomment top code to restrict user */}
                 {/* <Route path="/match" element={<Match />} /> */}
