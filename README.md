@@ -1,8 +1,8 @@
 
 <h1 align="center">
-    Time Chaser
+    Soy Mate
     <br><br>
-    <img alt="Time Chaser screenshot" height="300" src="https://github.com/rvitality/hack-and-snack/blob/main/soymate.png5y">
+    <img alt="Time Chaser screenshot" height="300" src="https://github.com/rvitality/hack-and-snack/blob/main/soymate.png5y?raw=true">
 </h1>
 
 
