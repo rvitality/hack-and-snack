@@ -2,7 +2,7 @@
 <h1 align="center">
     Soy Mate
     <br><br>
-    <img alt="Time Chaser screenshot" height="300" src="https://github.com/rvitality/hack-and-snack/blob/main/soymate.png5y?raw=true">
+    <img alt="Time Chaser screenshot" height="300" src="https://github.com/rvitality/hack-and-snack/blob/b2b25fa1ddd33f79ae4449ba2101be0d02d5c685/soymate.png">
 </h1>
 
 
