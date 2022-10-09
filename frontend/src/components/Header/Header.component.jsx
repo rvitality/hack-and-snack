@@ -36,21 +36,21 @@ const Header = () => {
 
     return (
         <>
-            {/* <header
+            <header
                 className={`${
-                    !isLoggedIn ? "absolute" : "relative"
+                    !isLoggedIn ? "absolute" : "relative flex justify-between items-center"
                 } z-[99] top-0 left-0 right-0 p-4 px-6`}
-            > */}
-            <header className={` z-[99] top-0 left-0 right-0 p-4 px-6`}>
+            >
+                {/* <header className={` z-[99] top-0 left-0 right-0 p-4 px-6`}> */}
                 <nav
-                    className={`flex items-center justify-between font-semibold  pr-12 ${
-                        !isLoggedIn ? "w-1/2" : ""
+                    className={` flex items-center justify-between font-semibold  pr-12 ${
+                        !isLoggedIn ? "w-1/2" : "w-full"
                     }`}
                 >
                     <div className="flex items-center ">
-                        <a href="#">
+                        <Link to="/">
                             <img src={logo} alt="" className="w-[6rem] mr-6" />
-                        </a>
+                        </Link>
 
                         {/* <ul className="flex space-x-5">
                             <li>
