@@ -5,7 +5,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header/Header.component";
 
 import Landing from "./routes/Landing/Landing.route";
-import DesoComponent from "./components/Deso/Deso.component";
 import Match from "./routes/Match/Match.route";
 import { useAuthContext } from "./context/AuthContext";
 
