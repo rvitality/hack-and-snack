@@ -1,5 +1,9 @@
-# hack-and-snack
-This is a repo for food hackathon.
+
+<h1 align="center">
+    Time Chaser
+    <br><br>
+    <img alt="Time Chaser screenshot" height="300" src="https://github.com/rvitality/hack-and-snack/blob/main/soymate.png5y">
+</h1>
 
 
 
