@@ -338,13 +338,16 @@ const Match = () => {
                                             // YOUR RESPONSES
                                             if (user === "you") {
                                                 return (
-                                                    <div key={data.msg} className="flex space-x-4">
+                                                    <div
+                                                        key={data.msg}
+                                                        className="flex space-x-4 flex-row-reverse"
+                                                    >
                                                         {/* profile */}
-                                                        <div className="flex flex-col  space-y-2 justify-center items-center">
+                                                        <div className="flex flex-col  space-y-2 justify-center items-center ml-4">
                                                             <img
                                                                 src={userProfileImg}
                                                                 alt={name}
-                                                                className="object-cover h-8 w-8 rounded-full shadow-xl"
+                                                                className=" object-cover h-8 w-8 rounded-full shadow-xl"
                                                             />
                                                             <span className="text-xs text-gray">
                                                                 {formatTime(new Date())}
@@ -352,7 +355,7 @@ const Match = () => {
                                                         </div>
 
                                                         {/* msg */}
-                                                        <div className="bg-white p-4 shadow-md">
+                                                        <div className="bg-white p-4 shadow-md ">
                                                             {msg}
                                                         </div>
                                                     </div>
@@ -361,10 +364,7 @@ const Match = () => {
 
                                             // FRIENDS RESPONSES
                                             return (
-                                                <div
-                                                    key={data.msg}
-                                                    className="flex flex-row-reverse "
-                                                >
+                                                <div key={data.msg} className="flex space-x-4 ">
                                                     {/* profile */}
                                                     <div className=" ml-3 flex flex-col  space-y-2 justify-center items-center">
                                                         <img
